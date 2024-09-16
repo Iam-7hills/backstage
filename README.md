@@ -6,7 +6,7 @@ Please follow this steps to install backstage in your Kubernetes cluster. Below 
 
 ## Pre-requisite
 
-# Login into Kubernetes cluster 
+### Login into Kubernetes cluster 
 
 1. NodeJs Installation
 ```
@@ -36,7 +36,7 @@ git clone git@github.com:backstage/backstage.git
 <br>
 <br>
 
-### Create your own backstage application
+### Create your own backstage application and verify
 1. cd to directory where you have app-config.yaml, package.json 
 ```
 npx @backstage/create-app@latest
@@ -57,7 +57,7 @@ http://localhost:3000
 <br>
 <br>
 
-### How to install backstage in Kubernetes cluster
+## Actual Installation steps
 1. cd to application directory
 ```
 cd **FirstBackstage**/
