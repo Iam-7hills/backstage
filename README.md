@@ -82,4 +82,19 @@ cd backstage/postgres
 kubectl create ns backstage
 kubectl create -f .
 ```
+4. Verify the postgres containers if it is running
+```
+kubectl get all -n backstage
+NAME                             READY   STATUS    RESTARTS        AGE
+pod/postgres-86d6584975-dvxdg    1/1     Running   1 (3h26m ago)   7h8m
+
+NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
+service/postgres    ClusterIP   <ip>   <none>        5432/TCP   7h8m
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/postgres    1/1     1            1           7h8m
+
+NAME                                   DESIRED   CURRENT   READY   AGE
+replicaset.apps/postgres-86d6584975    1         1         1       7h8m
+```
 
