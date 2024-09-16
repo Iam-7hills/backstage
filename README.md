@@ -58,7 +58,8 @@ http://localhost:3000
 <br>
 <br>
 
-## Actual Installation steps
+## Postgres and Backstage container deployment
+### Actual Installation steps
 1. cd to application directory
 ```
 cd **FirstBackstage**/
