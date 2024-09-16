@@ -48,6 +48,10 @@ cd FirstBackstage/
 ```
 yarn dev
 ```
+4. Now you can access the application from the browser
+```
+http://localhost:3000
+```
 
 <br>
 <br>
