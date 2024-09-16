@@ -42,7 +42,7 @@ npx @backstage/create-app@latest
 2. Enter your application name(any): FirstBackstage
 cd to your application directory (cd FirstBackstage)
 ```
-cd FirstBackstage/
+cd **FirstBackstage**/
 ```
 3. Run backstage in a development mode
 ```
@@ -52,6 +52,16 @@ yarn dev
 ```
 http://localhost:3000
 ```
+<br>
+<br>
 
-<br>
-<br>
+### How to install backstage in Kubernetes cluster
+1. cd to application directory
+```
+cd **FirstBackstage**/
+```
+```
+yarn tsc
+yarn build:backend
+```
+Dockerfile will get created under <FirstBackStage/packages/backend/backend
