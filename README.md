@@ -39,8 +39,8 @@ git clone git@github.com:backstage/backstage.git
 ```
 npx @backstage/create-app@latest
 ```
-Enter your application name(any): FirstBackstage
-2. cd to your application directory (cd FirstBackstage)
+2. Enter your application name(any): FirstBackstage
+cd to your application directory (cd FirstBackstage)
 ```
 cd FirstBackstage/
 ```
