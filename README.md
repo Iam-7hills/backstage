@@ -140,10 +140,10 @@ or <ingress-url>
 
 Refer : backstage.io
 
-### - As GitHub provider
+###  As GitHub provider
 Refer : backstage.io
 
 ## Plugins
 
-### - Kubernetes plugin
+### Kubernetes plugin
 
