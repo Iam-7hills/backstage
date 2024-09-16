@@ -136,11 +136,11 @@ or <ingress-url>
 
 ## Authentication
 
-### - As Guest
+### As Guest
 
 Refer : backstage.io
 
-###  As GitHub provider
+### As GitHub provider
 Refer : backstage.io
 
 ## Plugins
