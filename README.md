@@ -75,10 +75,11 @@ search for "NODE_ENV"
 ENV NODE_ENV development
 yarn install --frozen-lockfile --development --network-timeout 300000
 ```
-3. Run postgres
+3. Run postgres inside kubernetes backstage namespace
 ```
 git clone https://github.com/Iam-7hills/backstage.git
 cd backstage/postgres
+kubectl create ns backstage
 kubectl create -f .
 ```
 
