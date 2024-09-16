@@ -31,7 +31,22 @@ yarn --version
 ```
 git clone git@github.com:backstage/backstage.git
 ```
-
+<br>
+<br>
+### Create your own backstage application
+1. cd to directory where you have app-config.yaml, package.json 
+```
+npx @backstage/create-app@latest
+```
+Enter your application name(any): FirstBackstage
+2. cd to your application directory (cd FirstBackstage)
+```
+cd guy-backstage/
+```
+3. Run backstage in a development mode
+```
+yarn dev
+```
 
 <br>
 <br>
