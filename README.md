@@ -134,4 +134,13 @@ http://127.0.0.1:8080
 or <ingress-url>
 ```
 
+## Authentication
+
+### - As Guest
+
+Refer : backstage.io
+
+### - As GitHub
+Refer : backstage.io
+
 
