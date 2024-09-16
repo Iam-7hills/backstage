@@ -75,7 +75,7 @@ search for "NODE_ENV"
 ENV NODE_ENV development
 yarn install --frozen-lockfile --development --network-timeout 300000
 ```
-# Need two containers postgres doesn't require any customization, however you need to perform step 3 and 6 for every changes in the backstage app or the plugins
+# Need two containers postgres doesn't require any customization, however you need to perform step 3 and 5 for every changes in the backstage app or the plugins
 
 3. Create Docker Image for the backend container
 ```
@@ -92,19 +92,31 @@ cd backstage/postgres
 kubectl create ns backstage
 kubectl create -f .
 ```
-5. Verify the postgres containers if it is running
+
+5. Run backstage inside kubernetes backstage namespace
+```
+git clone https://github.com/Iam-7hills/backstage.git
+cd backstage/backstage
+kubectl create -f .
+```
+
+6. Verify the postgres containers if it is running
 ```
 kubectl get all -n backstage
 NAME                             READY   STATUS    RESTARTS        AGE
-pod/postgres-86d6584975-dvxdg    1/1     Running   1 (3h26m ago)   7h8m
+pod/backstage-555c7fb84d-dzck6   1/1     Running   0               42m
+pod/postgres-86d6584975-dvxdg    1/1     Running   1 (3h39m ago)   7h20m
 
 NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)    AGE
-service/postgres    ClusterIP   <ip>   <none>        5432/TCP   7h8m
+service/backstage   ClusterIP   <ip>    <none>        80/TCP     42m
+service/postgres    ClusterIP   <ip>   <none>        5432/TCP   7h20m
 
 NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
-deployment.apps/postgres    1/1     1            1           7h8m
+deployment.apps/backstage   1/1     1            1           42m
+deployment.apps/postgres    1/1     1            1           7h20m
 
 NAME                                   DESIRED   CURRENT   READY   AGE
-replicaset.apps/postgres-86d6584975    1         1         1       7h8m
+replicaset.apps/backstage-555c7fb84d   1         1         1       42m
+replicaset.apps/postgres-86d6584975    1         1         1       7h20m
 ```
 
