@@ -42,7 +42,7 @@ npx @backstage/create-app@latest
 Enter your application name(any): FirstBackstage
 2. cd to your application directory (cd FirstBackstage)
 ```
-cd guy-backstage/
+cd FirstBackstage/
 ```
 3. Run backstage in a development mode
 ```
