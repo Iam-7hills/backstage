@@ -1,6 +1,21 @@
-**Pre-requisites**
-1. npm
-2. yarn
+# Backstage Installation 
 
-**Download the github from backstage**
-git clone git@github.com:backstage/backstage.git
+Please follow this steps to install backstage in your Kubernetes cluster
+
+
+<br>
+<br>
+
+## Pre-requisite
+
+1. NodeJs Installation
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+```
+2. Install Yarn module from npm Note : npm install yarn
+```
+nvm install 20
+```
+
+<br>
+<br>
