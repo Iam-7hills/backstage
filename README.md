@@ -1,10 +1,12 @@
-# Backstage Installation 
+# Backstage Installation in Kubernetes Cluster
 
-Please follow this steps to install backstage in your Kubernetes cluster
+Please follow this steps to install backstage in your Kubernetes cluster. Below steps also located in backstage.io under various location.
 
 <br>
 
 ## Pre-requisite
+
+**Login into Kubernetes cluster **
 
 1. NodeJs Installation
 ```
