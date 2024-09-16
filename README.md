@@ -84,6 +84,7 @@ docker image build . -f packages/backend/Dockerfile --tag iam7hills/dockerdemo:2
 docker push <your-repository>:<tag>
 ```
 please note your repository location, as should be updated under the image section of this file https://github.com/Iam-7hills/backstage/blob/main/backstage/bs-deploy.yaml
+
 4. Run postgres inside kubernetes backstage namespace
 ```
 git clone https://github.com/Iam-7hills/backstage.git
