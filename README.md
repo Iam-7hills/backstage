@@ -65,3 +65,9 @@ yarn tsc
 yarn build:backend
 ```
 Dockerfile will get created under <FirstBackStage/packages/backend/backend
+
+Edit Dockerfile to set environment as development or production, in my example, i have used as "development"
+```
+ENV NODE_ENV development
+yarn install --frozen-lockfile --development --network-timeout 300000
+```
