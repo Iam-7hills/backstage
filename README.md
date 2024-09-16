@@ -19,7 +19,7 @@ nvm --version
 ```
 npm install --global yarn
 ```
-4. Set Yarn to version 1
+4. Set Yarn to major version 1, DO NOT TRY version 2 or any
 ```
 yarn set version 1.22.19
 ```
