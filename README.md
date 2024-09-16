@@ -75,6 +75,14 @@ search for "NODE_ENV"
 ENV NODE_ENV development
 yarn install --frozen-lockfile --development --network-timeout 300000
 ```
+### Need two containers postgres doesn't require any customization, however you need to modify the apps and pluging
+### This step 3 and 5 should repeat for every changes in the backstage
+
+3. Create Docker Image for the backend container
+```
+docker login
+docker image build . -f packages/backend/Dockerfile --tag iam7hills/dockerdemo:2.0.0
+```
 3. Run postgres inside kubernetes backstage namespace
 ```
 git clone https://github.com/Iam-7hills/backstage.git
