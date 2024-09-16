@@ -122,3 +122,16 @@ replicaset.apps/backstage-555c7fb84d   1         1         1       42m
 replicaset.apps/postgres-86d6584975    1         1         1       7h20m
 ```
 
+7. Portforward or Ingress or LoadBalancing
+For testing purpose
+```
+kubectl port-forward --namespace=backstage svc/backstage 8080:80
+```
+
+Lauch the url in the browser
+```
+http://127.0.0.1:8080
+or <ingress-url>
+```
+
+
