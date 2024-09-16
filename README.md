@@ -2,8 +2,6 @@
 
 Please follow this steps to install backstage in your Kubernetes cluster
 
-
-<br>
 <br>
 
 ## Pre-requisite
