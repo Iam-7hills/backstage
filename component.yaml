@@ -1,0 +1,29 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Kubernetes-Integration
+  description: Users api
+  annotations:
+    backstage.io/kubernetes-id: users-api
+  tags:
+    - nginx
+    - python
+    - flask
+  links:
+    - url: https://appfromansible.azurewebsites.net/home
+      title: Home Api
+      icon: dashboard
+      type: Sample-Page
+    - url: https://appfromansible.azurewebsites.net/secret
+      title: Secret Api
+      icon: analytics
+      type: metrics-dashboard
+    - url: https://appfromansible.azurewebsites.net/
+      title: Home page
+      icon: assignment
+      type: logs-dashboard  
+spec:
+  type: service
+  lifecycle: production
+  owner: Vinodh Elumalai
+  system: public-websites
